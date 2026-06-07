@@ -1,8 +1,6 @@
 window.addEventListener("load", function() {
 
-    // ==========================================
     // עמוד 1: התחברות ורישום 
-    // ==========================================
     var btnNewUser = document.getElementById("btnNewUser");
     var loginForm = document.getElementById("loginForm");
     var isNewUserMode = false; 
@@ -26,8 +24,8 @@ window.addEventListener("load", function() {
             var errorMsg = document.getElementById("loginError");
 
             // בדיקות חובה לכולם (אימייל וסיסמה)
-            if (email.indexOf("@") == -1) {
-                errorMsg.innerHTML = "שגיאה: המייל חייב להכיל @";
+            if (email.indexOf("@post.bgu.ac.il") == -1) {
+                errorMsg.innerHTML = "שגיאה! כתובת המייל חייבת להכיל את הסיומת @post.bgu.ac.il";
                 return;
             }
             if (password.length < 6) {
