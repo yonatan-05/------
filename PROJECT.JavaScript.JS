@@ -47,7 +47,7 @@ window.addEventListener("load", function() {
             } else {
                 alert("התחברת בהצלחה!");
             }
-            window.location.href = "PROJECT"; 
+            window.location.href = "PROJECT.html"; 
         });
     }
 
